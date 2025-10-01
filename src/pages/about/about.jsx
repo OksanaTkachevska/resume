@@ -1,8 +1,13 @@
+import { Header } from "../../components/structure/header/header.jsx";
+import { Main } from "../../components/structure/main/main.jsx";
 
 export function AboutPage() {
     return (
-        <div>
-            <h1>Welcome to the Home Page</h1>
-        </div>
+        <>
+            <Header />
+            <Main>
+                <h1>About Page</h1>
+            </Main> 
+        </>
     );
 }
