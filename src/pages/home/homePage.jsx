@@ -1,4 +1,3 @@
-import { Header } from "../../components/structure/header/header.jsx";
 import { Hero } from "../../components/structure/main/hero/hero.jsx";
 import { HeroContent } from "./content/hero.jsx";
 import { MainHome } from "../../components/structure/main/mainHome.jsx";
@@ -17,7 +16,6 @@ import { Footer } from "../../components/structure/footer/footer.jsx";
 export function HomePage() {
   return (
     <>
-      
       <MainHome title="Home Page">
         <Hero>
           <HeroContent />
