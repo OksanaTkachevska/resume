@@ -17,7 +17,7 @@ import { Footer } from "../../components/structure/footer/footer.jsx";
 export function HomePage() {
   return (
     <>
-      <Header />
+      
       <MainHome title="Home Page">
         <Hero>
           <HeroContent />
