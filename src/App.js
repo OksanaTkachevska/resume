@@ -1,4 +1,4 @@
-// src/App.jsx
+// src/App.jsx// "learn react"
 import { Routes, Route } from "react-router-dom";
 import { HomePage } from "./pages/home/homePage.jsx";
 import { AboutPage } from "./pages/about/about.jsx";
@@ -14,3 +14,4 @@ function App() {
   );
 }
 export default App;
+

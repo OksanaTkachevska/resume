@@ -12,10 +12,12 @@ import { Article5Content } from "./content/articleContent5.jsx";
 import { AsideLeft } from "../../components/structure/main/aside/asideL.jsx";
 import { AsideRight } from "../../components/structure/main/aside/asideR.jsx";
 import { Footer } from "../../components/structure/footer/footer.jsx";
+import { Header } from "../../components/structure/header/header.jsx";
 
 export function HomePage() {
   return (
     <>
+    <Header />
       <MainHome title="Home Page">
         <Hero>
           <HeroContent />
