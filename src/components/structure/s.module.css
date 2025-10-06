@@ -5,34 +5,40 @@
 }
 
 .asideLeft {
-  display: none;/*
+  /*display: none;*/
+  /*
   background-color: #6fabe7;*/
   padding: 0 20px;
   border-right: 1px solid #ddd;
-  
-  }
 
-  .asideLeft h2 {
-    text-align: center;
-  }
-  .asideLeft ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  .asideLeft li {
-    text-align: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
-  }
-  .asideLeft a {
-    text-decoration: none;
-    color: #333;
-    display: block; /* Занимает всю ширину элемента списка */
-    
-  }
+}
+
+.asideLeft h2 {
+  text-align: center;
+}
+
+.asideLeft ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.asideLeft li {
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.asideLeft a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  /* Занимает всю ширину элемента списка */
+
+}
 
 .asideRight {
-  display: none;/*
+  display: none;
+  /*
   background-color: #1e67af;*/
   padding: 0 20px;
   border-left: 1px solid #ddd;
@@ -72,16 +78,19 @@
 .footer h5 {
   margin: 0;
 }
+
 .copyright {
   margin-bottom: 0;
   font-size: 8px;
 }
+
 /* header */
 .flexbox_header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
+
 /*footer */
 .flexbox {
   display: flex;
@@ -89,12 +98,15 @@
   align-items: baseline;
   gap: 50px;
 }
+
 .address {
   text-align: right;
 }
+
 .contact {
   text-align: left;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -106,7 +118,8 @@
 
 /* 1. Скрываем основную навигацию на мобильных (по умолчанию) */
 .navbar {
-  display: none; /* Скрываем десктопную навигацию */
+  display: none;
+  /* Скрываем десктопную навигацию */
 }
 
 /* 2. Показываем кнопку-иконку для открытия меню на мобильных */
@@ -118,10 +131,12 @@
 .navbar_v {
   /* Это само меню, которое будет позиционироваться */
   position: absolute;
-  top: 100%; /* Располагаем под хедером */
+  top: 100%;
+  /* Располагаем под хедером */
   left: 0;
   width: 100%;
-  background-color: #f8f9fa; /* Фон как у хедера */
+  background-color: #f8f9fa;
+  /* Фон как у хедера */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 100;
   padding: 10px 0;
@@ -140,13 +155,16 @@
   padding: 10px 0;
   border-bottom: 1px solid #eee;
 }
+
 .navbar_v li:last-child {
   border-bottom: none;
 }
+
 .navbar_v a {
   text-decoration: none;
   color: #333;
-  display: block; /* Занимает всю ширину элемента списка */
+  display: block;
+  /* Занимает всю ширину элемента списка */
 }
 
 /*
@@ -169,24 +187,33 @@
 .flexbox_header_end {
   display: flex;
   align-items: center;
-  gap: 10px; /* Интервал между SignIn и кнопкой меню */
-}
-/* ======================================================= */
-@media (min-width: 768px) {
-.container {
-  max-width: 700px;
+  gap: 10px;
+  /* Интервал между SignIn и кнопкой меню */
 }
 
-.flexbox_header_end {
-  display: none;
-}
+/* ======================================================= */
+@media (min-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+
+  .content {
+    /* Две колонки: широкая (2fr) для основного контента и узкая (1fr) для сайдбара */
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+
+  .flexbox_header_end {
+    display: none;
+  }
 
   .navbar {
     display: block;
   }
 
   .navbar ul {
-    display: flex; /* Возвращаем горизонтальную раскладку для десктопа */
+    display: flex;
+    /* Возвращаем горизонтальную раскладку для десктопа */
     justify-content: center;
     gap: 20px;
     list-style: none;
@@ -202,19 +229,22 @@
   /* 3. Скрываем мобильное меню на десктопе */
 
 }
+
 /* ======================================================= */
 /* 2. Планшет горизонтальный - ПОЯВЛЕНИЕ САЙДБАРА */
 /* min-width: 1024px */
 @media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+
   .content {
     /* Две колонки: широкая (2fr) для основного контента и узкая (1fr) для сайдбара */
     grid-template-columns: 1fr 2fr;
     gap: 30px;
   }
-  .asideLeft {
-    display: block;
-    position: relative;
-  } 
+
+
 }
 
 /* ======================================================= */
@@ -223,32 +253,28 @@
 @media (min-width: 1280px) {
   .content {
     /* Делаем основной контент еще шире: */
-    grid-template-columns: 1fr 3fr;
+    /*grid-template-columns: 1fr 3fr;*/
     gap: 40px;
   }
+
   .container {
-    max-width: 1200px;
+    max-width: 1280px;
   }
 }
+
 /* ======================================================= */
 /* 3. Обычный монитор - УЛУЧШЕННАЯ РАСКЛАДКА */
 /* min-width: 1288px */
 @media (min-width: 1560px) {
   .content {
     /* Делаем основной контент еще шире: */
-    grid-template-columns:1fr 3fr 1fr;
+    grid-template-columns: 2fr 5fr;
     gap: 40px;
   }
 
-.asideRight {
-    display: block;
-    /*position: relative;
-  } 
 
-  .container {
-    max-width: 1560px;*/
-  }
 }
+
 .navbar-v {
-    display: block;
-  }
+  display: block;
+}

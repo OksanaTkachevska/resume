@@ -10,6 +10,7 @@ import { Article2Content } from "./content/articleContent2.jsx";
 import { Article3Content } from "./content/articleContent3.jsx";
 import { Article4Content } from "./content/articleContent4.jsx";
 import { Article5Content } from "./content/articleContent5.jsx";
+import { AsideLeftContent } from "./content/asideLeftContent.jsx";
 import { AsideLeft } from "../../components/structure/main/aside/asideL.jsx";
 import { AsideRight } from "../../components/structure/main/aside/asideR.jsx";
 import { Footer } from "../../components/structure/footer/footer.jsx";
@@ -17,30 +18,13 @@ import { Footer } from "../../components/structure/footer/footer.jsx";
 export function HomePage() {
   return (
     <>
-      <Header />
       <MainHome title="Home Page">
         <Hero>
           <HeroContent />
         </Hero>
         <Main>
-          <AsideLeft title={"Меню"}>
-            <ul>
-              <li>
-                <a href="#about">Навыки и компетенции</a>
-              </li>
-              <li>
-                <a href="#projects">Опыт и проекты</a>
-              </li>
-              <li>
-                <a href="#skills">Творческие проекты</a>
-              </li>
-              <li>
-                <a href="#contact">Личные качества</a>
-              </li>
-              <li>
-                <a href="#contact">Цели и планы на будущее</a>
-              </li>
-            </ul>
+          <AsideLeft>
+            <AsideLeftContent />
           </AsideLeft>
           <Section title={"Обо мне"}>
             <Article title="Навыки и компетенции">
