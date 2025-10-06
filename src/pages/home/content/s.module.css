@@ -41,6 +41,7 @@
     text-align: left;
     gap: 2rem;
   }
+
   /*
   .heroImage img {
     width: 200px;
@@ -49,9 +50,12 @@
 */
 
   .heroImage img {
-    width: clamp(200px, 25vw, 300px); /* плавное масштабирование изображения */
-    height: auto; /* сохраняем пропорции */
+    width: clamp(200px, 25vw, 300px);
+    /* плавное масштабирование изображения */
+    height: auto;
+    /* сохраняем пропорции */
   }
+
   .heroText h1 {
     font-size: clamp(2rem, 4vw, 2.5rem);
   }
@@ -128,6 +132,44 @@
     font-size: 1.1rem;
     max-width: 700px;
   }
+}
+/*
+.orangePunkt li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  text-align: right;
+  justify-content: space-between;
+}*/
+
+/* Общий контейнер для строки: использует flexbox для разделения контента */
+.skill_item, .contact_item {
+  display: flex;
+  justify-content: space-between;
+  /* Распределяет элементы по краям */
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+  /* Тонкая линия-разделитель */
+  margin-bottom: 5px;
+}
+
+/* Стилизация левого столбца (Категория) */
+.skill_category {
+  /* Выравнивание по левому краю (по умолчанию для текста, но лучше явно указать) */
+  text-align: left;
+  /* flex-grow: 1; /* Опционально: позволяет категории занять доступное пространство */
+  font-weight: normal;
+}
+
+/* Стилизация правого столбца (Список навыков) */
+.skill_list {
+  /* **Ключевое изменение:** Гарантирует выравнивание текста внутри этого элемента по правому краю */
+  text-align: right;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 /*
