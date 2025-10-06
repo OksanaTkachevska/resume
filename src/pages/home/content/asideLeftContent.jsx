@@ -28,56 +28,52 @@ export function AsideLeftContent() {
         <ul className={s.orangePunkt}>
           <li className={s.skill_item}>
             <span className={s.skill_category}>Frontend:</span>
-            <span>
-              <span class={s.skill_list}>HTML5</span>
-              <span class={s.skill_list}>CSS3</span>
-              <span class={s.skill_list}>SASS</span>
+            <span className={s.skill_group}>
+              <span className={s.skill_list}>HTML5</span>
+              <span className={s.skill_list}>CSS3</span>
+              <span className={s.skill_list}>SASS</span>
             </span>
           </li>
           <li className={s.skill_item}>
-              <span className={s.skill_category}>Languages:</span>
-            <span>
-              <span class={s.skill_list}>JavaScript</span>
-              <span class={s.skill_list}>TypeScript</span>
-              <span class={s.skill_list}>C++</span>
+            <span className={s.skill_category}>Languages:</span>
+            <span className={s.skill_group}>
+              <span className={s.skill_list}>JavaScript</span>
+              <span className={s.skill_list}>TypeScript</span>
+              <span className={s.skill_list}>C++</span>
             </span>
           </li>
           <li className={s.skill_item}>
-              <span className={s.skill_category}>Frameworks:</span>
-            <span>
-              <span class={s.skill_list}>React</span>
-              <span class={s.skill_list}>ReactNative</span>
-              <span class={s.skill_list}>Next.js</span>
+            <span className={s.skill_category}>Frameworks:</span>
+            <span className={s.skill_group}>
+              <span className={s.skill_list}>React</span>
+              <span className={s.skill_list}>ReactNative</span>
+              <span className={s.skill_list}>Next.js</span>
             </span>
           </li>
           <li className={s.skill_item}>
-
             <span className={s.skill_category}>Runtime:</span>
-            <span>
-            <span class={s.skill_list}>Node.js</span>
+            <span className={s.skill_group}>
+              <span className={s.skill_list}>Node.js</span>
             </span>
           </li>
           <li className={s.skill_item}>
-
             <span className={s.skill_category}>Databases:</span>
-            <span>
-            <span class={s.skill_list}>PostgreSQL</span>
-            <span class={s.skill_list}>MongoDB</span>
-            <span class={s.skill_list}>MariaDB</span>
+            <span className={s.skill_group}>
+              <span className={s.skill_list}>PostgreSQL</span>
+              <span className={s.skill_list}>MongoDB</span>
+              <span className={s.skill_list}>MariaDB</span>
             </span>
           </li>
           <li className={s.skill_item}>
-
             <span className={s.skill_category}>VCS:</span>
-            <span>
-            <span class={s.skill_list}>GIT (GitHub, GitLab)</span>
+            <span className={s.skill_group}>
+              <span className={s.skill_list}>GIT (GitHub, GitLab)</span>
             </span>
           </li>
           <li className={s.skill_item}>
-
             <span className={s.skill_category}>Build:</span>
-            <span>
-            <span class={s.skill_list}>WebPack</span>
+            <span className={s.skill_group}>
+              <span className={s.skill_list}>WebPack</span>
             </span>
           </li>
         </ul>
