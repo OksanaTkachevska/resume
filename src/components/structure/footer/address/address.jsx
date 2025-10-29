@@ -5,9 +5,9 @@ export function Address() {
     <div className={s.address}>
       <h5>Our Address</h5>
       <p>
-        Украина 54038
+        Украина 54111
         Николаев <br />
-        Логинова 50а <br />
+        Логинова 142 111<br />
       </p>
     </div>
   );

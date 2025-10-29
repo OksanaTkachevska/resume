@@ -5,8 +5,8 @@ export function Contact() {
     <div className={s.contact}>
       <h5>Contact Us</h5>
       <p>
-        Email: 4ndrey.Tkachenko@gmail.com <br />
-        Phone: +380679550525
+        Email: Oksana@i.ua <br />
+        Phone: +38011111111111
       </p>
     </div>
   );

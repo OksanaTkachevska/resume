@@ -9,14 +9,14 @@ export function AsideLeftContent() {
           <ul className={s.orangePunkt}>
             <li className={s.skill_item}>
               <span className={s.skill_category}>tel.:</span>
-              <a href="tel:+380679550525">
-                <span class={s.skill_list}> + 38 067 955 0 525</span>
+              <a href="tel:+38011111125">
+                <span class={s.skill_list}> + 38 011212121333</span>
               </a>
             </li>
             <li className={s.skill_item}>
               <span className={s.skill_category}>email:</span>
-              <a href="mailto:4ndrey.tkachenko@gmail.com">
-                <span class={s.skill_list}>Tkachenko@gmail.com</span>
+              <a href="mailto:Oksana@gmail.com">
+                <span class={s.skill_list}>Oksana@gmail.com</span>
               </a>
             </li>
           </ul>
@@ -98,20 +98,4 @@ export function AsideLeftContent() {
       </div>
     </>
   );
-}
-{
-  /*
-   <li>
-
-   это ** гибкий фреймворк** управления проектами в рамках Agile-методологий, который помогает командам работать над сложными задачами, разбивая работу на короткие итерации (спринты) и создавая готовый к поставке продукт поэтапно. Он включает определенные роли (Владелец Продукта, Скрам-мастер, Команда Разработки), события (планирование спринта, ежедневные стендапы, обзор спринта, ретроспектива спринта) и артефакты (Бэклог Продукта, Бэклог Спринта, Инкремент Продукта) для обеспечения прозрачности, адаптации и быстрого реагирования на изменения
-            <span class="skills-text">WebPack</span>
-          </li>
-          
-          <li>
-            <span class="skills-text">Node.js</span>
-          </li>
-                   <li>
-            <span class="skills-text">CSS3</span>
-          </li>
-  */
 }
